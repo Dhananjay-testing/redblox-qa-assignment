@@ -35,7 +35,7 @@ describe('User Management - Table validations (robust)', () => {
           cy.wrap($el).find('tbody tr').its('length').should('be.greaterThan', 0);
 
         } else {
-          // div- table layout
+          // div-table layout
           cy.get('.oxd-table .oxd-table-card, .oxd-table-body .oxd-table-row, .oxd-table-body .oxd-table-card', { timeout: 10000 })
             .its('length')
             .should('be.greaterThan', 0);
@@ -45,7 +45,9 @@ describe('User Management - Table validations (robust)', () => {
         }
 
       });
-  });
-    // Take screenshot
+
+    //Take screenshot
     cy.screenshot('user-management-table');
+  });
+
 });
