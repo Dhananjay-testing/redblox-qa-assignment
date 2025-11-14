@@ -1,0 +1,14 @@
+# Execution Summary
+
+# Tests Passed:
+9 out of 9 tests passed across all API and UI automation suites.
+
+# Issues Found:
+- DummyJSON API does not always persist created users, which can result in 404 responses. Tests were written to handle both persisted and non-persisted behavior.
+- OrangeHRM UI contains dynamic selectors that occasionally change; stable text-based and fallback selectors were used to avoid flakiness.
+
+# Improvements Made:
+- Implemented fallback assertions to handle DummyJSON's non-persistent behavior.
+- Added multiple selector strategies to stabilize OrangeHRM UI element identification.
+- Structured tests into clear functional groups for maintainability.
+- Added permission-denied simulation and negative test coverage for more robust flows.
