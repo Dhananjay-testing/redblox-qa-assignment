@@ -1,0 +1,15 @@
+{
+  "name": "redblox-qa-assignment",
+  "version": "1.0.0",
+  "description": "Cypress project for RedBlox QA Practical Assignment (API + UI)",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test": "npm run cypress:run"
+  },
+  "devDependencies": {
+    "cypress": "^15.6.0",
+    "@faker-js/faker": "^8.0.2"
+  }
+}

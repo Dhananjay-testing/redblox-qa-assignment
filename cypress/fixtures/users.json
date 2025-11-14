@@ -1,0 +1,9 @@
+{
+  "newUser": {
+    "firstName": "Dhananjay",
+    "lastName": "Darandale",
+    "age": 30,
+    "username": "dhan_test_user",
+    "email": "dhananjay.test@example.com"
+  }
+}
