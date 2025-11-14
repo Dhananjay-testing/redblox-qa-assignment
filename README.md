@@ -29,6 +29,7 @@ npm install
 
 Running Tests:
 npx cypress open
+
 npx cypress run --browser chrome
 
 Project Structure:
