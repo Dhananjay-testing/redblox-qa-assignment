@@ -46,5 +46,6 @@ describe('User Management - Table validations (robust)', () => {
 
       });
   });
-
+    // Take screenshot
+    cy.screenshot('user-management-table');
 });

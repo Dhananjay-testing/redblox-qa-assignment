@@ -10,6 +10,9 @@ describe('OrangeHRM Login - Part 2', () => {
     // verify dashboard
     cy.url().should('include', '/web/index.php/dashboard');
     cy.get('header').should('exist');
+
+    // Take screenshot
+  cy.screenshot('login-success');
   });
 
 });

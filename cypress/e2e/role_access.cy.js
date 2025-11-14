@@ -10,6 +10,9 @@ describe('Role Based Access - Menu visibility', () => {
 
     // verify admin menu
     cy.contains('Admin').should('exist');
+
+    // Take screenshot
+    cy.screenshot('admin-menu-visible');
   });
 
   it('Non-admin should not see User Management menu (simulated)', () => {
