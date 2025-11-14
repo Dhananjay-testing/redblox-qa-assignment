@@ -23,31 +23,17 @@ Prerequisites
 - Node.js (LTS)
 - npm
 - Chrome browser
-- Git (for repository submission)
-
-Installation
-npm install
-
-Running Tests (Interactive)
-npx cypress open
-
-Running Tests (Headless)
-npx cypress run --browser chrome
 
 Project Structure
-- cypress/e2e — test specifications
-- cypress/fixtures — test data
-- cypress/support — custom commands and setup files
-- cypress.config.js — Cypress configuration
+- cypress/e2e - test specifications
+- cypress/fixtures - test data
+- cypress/support - custom commands and setup files
+- cypress.config.js - Cypress configuration
 - package.json
 
 Included Test Specs
-- api_tests.cy.js — OTP/Login, Register User, Get User (DummyJSON)
-- ui_login.cy.js — Login flow on OrangeHRM
-- user_management.cy.js — Navigation to Users and table validation
-- role_access.cy.js — Role-based menu visibility checks
+- api_tests.cy.js - OTP/Login, Register User, Get User (DummyJSON)
+- ui_login.cy.js - Login flow on OrangeHRM
+- user_management.cy.js - Navigation to Users and table validation
+- role_access.cy.js - Role-based menu visibility checks
 
-Notes
-- DummyJSON is a mock API and may not persist newly created users. Tests are written to handle both persisted and non-persisted behavior.
-- OrangeHRM selectors may change; test cases use stable selectors wherever possible.
-- The API-to-UI mapping scenario is simulated because DummyJSON and OrangeHRM are not connected.
